@@ -33,6 +33,10 @@ gem 'rails_12factor', group: :production
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+group :test do
+  gem 'mini_backtrace',     '0.1.3'
+end
+
 gem 'puma'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
